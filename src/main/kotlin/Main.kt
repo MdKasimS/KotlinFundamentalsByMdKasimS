@@ -1,5 +1,6 @@
 fun main()
 {
-    val x = 5
+    //Type inference
+    val x:Float = 5f
     println(x)
 }
