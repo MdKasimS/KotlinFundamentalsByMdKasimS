@@ -1,4 +1,5 @@
 fun main()
 {
-    println("Alhamdulillah! Started with Kotlin Basics.")
+    val x = 5
+    println(x)
 }
