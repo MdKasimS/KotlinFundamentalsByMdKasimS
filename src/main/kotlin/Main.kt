@@ -21,6 +21,10 @@ fun main()
             5-> StringHandling().CheckPallindrome()
 
             6 -> CoordinateGeometry().ArePointsCollinearByArea()
+
+            7 -> SteelGrader().DeterminSteelGrade()
+
+            8 -> Calculator()
         }
 
     }while(choice!=18)
