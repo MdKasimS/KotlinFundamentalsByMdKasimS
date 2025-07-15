@@ -19,6 +19,8 @@ fun main()
             4-> StringHandling().CheckCharacterType()
 
             5-> StringHandling().CheckPallindrome()
+
+            6 -> CoordinateGeometry().ArePointsCollinearByArea()
         }
 
     }while(choice!=18)
