@@ -1,8 +1,7 @@
 fun main()
 {
     println("Fundamentals Of Kotlin")
-    var choice:Int? = 0
-
+    var choice:Int?
     do {
         println("-:Choose One Of The Following Programs To Run:-")
         println("------------------------------------------------")
@@ -16,6 +15,8 @@ fun main()
             2-> Distance()
 
             3 -> NumberHandling()
+
+            4-> StringHandling()
         }
 
     }while(choice!=18)
