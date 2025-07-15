@@ -16,7 +16,9 @@ fun main()
 
             3 -> NumberHandling()
 
-            4-> StringHandling()
+            4-> StringHandling().CheckCharacterType()
+
+            5-> StringHandling().CheckPallindrome()
         }
 
     }while(choice!=18)
