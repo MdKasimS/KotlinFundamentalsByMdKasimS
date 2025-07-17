@@ -5,7 +5,7 @@ class NumberHandling {
     var ActualNumber :Int = 0
 
 
-    fun CheckFiveDigitnumber()
+    fun checkFiveDigitnumber()
     {
         print("Enter the number : ")
         InputNumber1 = readLine()!!.toInt()
@@ -14,7 +14,7 @@ class NumberHandling {
         if(InputNumber1.toString().length>=5)
         {
 
-            var modulo: Int = 0
+            var modulo = 0
             while (InputNumber1!=0)
             {
                 modulo = InputNumber1 % 10
@@ -22,10 +22,12 @@ class NumberHandling {
                 InputNumber1 = InputNumber1 / 10
             }
             println("Reverse of the input number : ${OutPutNumber}")
+            return
         }
         else
         {
             println("Entered number length is less than 5. Please enter valid number again")
+            return
         }
     }
 
@@ -38,13 +40,13 @@ class NumberHandling {
         var secondNumber = 0
         var sum = 0
 
-        for(i in 1..InputNumber1)
-        {
-//          println(firstNumber)
-            sum = firstNumber + secondNumber
-            secondNumber = firstNumber
-            firstNumber = sum
-        }
+        (1..InputNumber1)
+            .forEach { i ->
+                //          println(firstNumber)
+                sum = firstNumber + secondNumber
+                secondNumber = firstNumber
+                firstNumber = sum
+            }
 //        println(secondNumber)
 
         println("Fibonacci of ${InputNumber1} is ${secondNumber}")

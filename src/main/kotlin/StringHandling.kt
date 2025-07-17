@@ -1,19 +1,14 @@
-import kotlin.reflect.typeOf
-
 class StringHandling {
 
-    var InputString : String = ""
-    var OutPutString : String = ""
+    var inputString : String = ""
+    var outPutString : String = ""
     var character : Char = 'A'
-    init {
 
-    }
-
-    fun CheckCharacterType()
+    fun checkCharacterType()
     {
         print("Input your character: ")
 
-        character = readLine()!!.firstOrNull()!!.toChar()
+        character = readLine()!!.first()
 
         println(character.code)
 
@@ -33,11 +28,11 @@ class StringHandling {
         }
     }
 
-    fun CheckPallindrome()
+    fun checkPallindrome()
     {
-        var numberHandler = NumberHandling()
+        val numberHandler = NumberHandling()
 
-        numberHandler.CheckFiveDigitnumber()
+        numberHandler.checkFiveDigitnumber()
 
         if(numberHandler.OutPutNumber.contentEquals(numberHandler.ActualNumber.toString()))
         {

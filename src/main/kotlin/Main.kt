@@ -14,11 +14,11 @@ fun main()
 
             2-> Distance()
 
-            3 -> NumberHandling().CheckFiveDigitnumber()
+            3 -> NumberHandling().checkFiveDigitnumber()
 
-            4-> StringHandling().CheckCharacterType()
+            4-> StringHandling().checkCharacterType()
 
-            5-> StringHandling().CheckPallindrome()
+            5-> StringHandling().checkPallindrome()
 
             6 -> CoordinateGeometry().ArePointsCollinearByArea()
 
