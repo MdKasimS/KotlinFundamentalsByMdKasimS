@@ -7,10 +7,13 @@ class CoordinateGeometry {
 
     var x1: Double = 0.0
     var x2: Double = 0.0
+    var z1: Double = 0.0
     var x3: Double = 0.0
     var y1: Double = 0.0
+    var z2: Double = 0.0
     var y2: Double = 0.0
     var y3: Double = 0.0
+    var z3: Double = 0.0
 
     fun Get2DPoints() {
 
@@ -101,4 +104,32 @@ class CoordinateGeometry {
         return area
     }
 
+    fun twoPointsDistanceIn3D():Double
+    {
+        print("Enter x1: ")
+        x1 = readLine()!!.toDouble()
+
+        print("Enter y1: ")
+        y1 = readLine()!!.toDouble()
+
+        print("Enter z1: ")
+        z1 = readLine()!!.toDouble()
+
+        print("Enter x2: ")
+        x2 = readLine()!!.toDouble()
+
+        print("Enter z2: ")
+        y2 = readLine()!!.toDouble()
+
+        print("Enter x1: ")
+        z2 = readLine()!!.toDouble()
+
+
+        var distance = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) + (z2-z1) * (z2-z1))
+        println(distance)
+        return distance
+
+    }
+
+//    https://www.cbsetuts.com/coordinate-geometry-chapter-wise-important-questions-class-10-mathematics/
 }

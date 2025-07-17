@@ -45,8 +45,10 @@ fun main()
             17 -> CoordinateGeometry().areaOfTriangleIn2D()
 
             18 -> CoordinateGeometry().twoPointsDistanceInPlane()
+
+            19 -> CoordinateGeometry().twoPointsDistanceIn3D()
         }
 
-    }while(choice!=19)
+    }while(choice!=20)
 
 }
