@@ -20,7 +20,7 @@ fun main()
 
             5-> StringHandling().checkPallindrome()
 
-            6 -> CoordinateGeometry().ArePointsCollinearByArea()
+            6 -> CoordinateGeometry().arePointsCollinearByArea()
 
             7 -> SteelGrader().DeterminSteelGrade()
 
@@ -33,8 +33,20 @@ fun main()
             11 -> NumberHandling().acceptIntegers()
 
             12 -> NumberHandling().calculateIntelligence()
+
+            13 -> Arrays().compoundInterest()
+
+            14 -> CoordinateGeometry().calculateAreaOfTriangle()
+
+            15 -> NumberHandling().checkLeapYear()
+
+            16 -> NumberHandling().rotateNumbers()
+
+            17 -> CoordinateGeometry().areaOfTriangleIn2D()
+
+            18 -> CoordinateGeometry().twoPointsDistanceInPlane()
         }
 
-    }while(choice!=18)
+    }while(choice!=19)
 
 }

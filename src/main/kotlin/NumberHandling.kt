@@ -5,7 +5,8 @@ class NumberHandling {
     var ActualNumber: Int = 0
     var numbers = mutableListOf<Int>()
 
-    fun checkFiveDigitnumber() {
+    fun checkFiveDigitnumber()
+    {
         print("Enter the number : ")
         InputNumber1 = readLine()!!.toInt()
         ActualNumber = InputNumber1
@@ -79,6 +80,55 @@ class NumberHandling {
             x = x + 0.5
 
             println("${i}. ${x} ${y}")
+        }
+    }
+
+    fun checkLeapYear()
+    {
+        var year = readLine()!!.toInt()
+        if(year%4==0 && (year%100!=0 || year%400==0))
+            println("Its a leap year")
+        else
+            println("Its not a leap year")
+    }
+
+    fun rotateNumbers()
+    {
+        var a = 0
+        var b = 0
+        var c = 0
+
+        var mode = 0
+
+        print("Enter a : ")
+        a = readLine()!!.toInt()
+        print("Enter b : ")
+        b = readLine()!!.toInt()
+        print("Enter c : ")
+        c = readLine()!!.toInt()
+
+        println("Shift mode: [1.Right 2.Left]")
+
+        mode = readLine()!!.toInt()
+
+        when(mode)
+        {
+            1 ->{
+                println("${a} ${b} ${c}")
+                var temp = a
+                a = c
+                c = b
+                b = temp
+                println("${a} ${b} ${c}")
+            }
+            2 -> {
+                println("${a} ${b} ${c}")
+                var temp = a
+                a = b
+                b = c
+                c = temp
+                println("${a} ${b} ${c}")
+            }
         }
     }
 
