@@ -14,7 +14,7 @@ fun main()
 
             2-> Distance()
 
-            3 -> NumberHandling()
+            3 -> NumberHandling().CheckFiveDigitnumber()
 
             4-> StringHandling().CheckCharacterType()
 
@@ -25,6 +25,8 @@ fun main()
             7 -> SteelGrader().DeterminSteelGrade()
 
             8 -> Calculator()
+
+            9 -> NumberHandling().CalculateFibonacci()
         }
 
     }while(choice!=18)

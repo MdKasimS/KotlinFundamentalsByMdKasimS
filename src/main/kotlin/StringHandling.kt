@@ -37,8 +37,8 @@ class StringHandling {
     {
         var numberHandler = NumberHandling()
 
-//        println(numberHandler.OutPutNumber)
-//        println(numberHandler.ActualNumber)
+        numberHandler.CheckFiveDigitnumber()
+
         if(numberHandler.OutPutNumber.contentEquals(numberHandler.ActualNumber.toString()))
         {
             println("Entered number is palindrome")
