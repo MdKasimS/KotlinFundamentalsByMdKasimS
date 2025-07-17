@@ -31,7 +31,7 @@ class NumberHandling {
         }
     }
 
-    fun CalculateFibonacci(): Int
+    fun calculateFibonacci(): Int
     {
         print("Enter the number for factorial calculation : ")
         InputNumber1 = readLine()!!.toInt()

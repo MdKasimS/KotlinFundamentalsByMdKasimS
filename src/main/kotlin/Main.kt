@@ -26,7 +26,9 @@ fun main()
 
             8 -> Calculator()
 
-            9 -> NumberHandling().CalculateFibonacci()
+            9 -> NumberHandling().calculateFibonacci()
+
+            10 -> StringHandling().printPyramid()
         }
 
     }while(choice!=18)

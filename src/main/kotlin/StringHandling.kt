@@ -42,8 +42,27 @@ class StringHandling {
         {
             println("Not a palindrome")
         }
+    }
 
+    fun printPyramid()
+    {
+        print("Enter the maximum number in Pyramid bases: ")
+        var rows = readLine()!!.toInt()
+        var count = 1
+        var edge = rows
+        for(i in 1..rows)
+        {
+            for (j in 1..edge*2) {
+                print(" ")
+            }
 
+            for(j in 1..i)
+            {
+                print("${count++}   ")
+            }
+            --edge
+            println()
+        }
     }
 
 }
