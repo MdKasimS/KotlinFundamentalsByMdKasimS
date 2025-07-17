@@ -29,6 +29,10 @@ fun main()
             9 -> NumberHandling().calculateFibonacci()
 
             10 -> StringHandling().printPyramid()
+
+            11 -> NumberHandling().acceptIntegers()
+
+            12 -> NumberHandling().calculateIntelligence()
         }
 
     }while(choice!=18)

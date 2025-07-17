@@ -1,33 +1,84 @@
 class NumberHandling {
 
-    var InputNumber1:Int = 0
+    var InputNumber1: Int = 0
     var OutPutNumber: String = ""
-    var ActualNumber :Int = 0
+    var ActualNumber: Int = 0
+    var numbers = mutableListOf<Int>()
 
-
-    fun checkFiveDigitnumber()
-    {
+    fun checkFiveDigitnumber() {
         print("Enter the number : ")
         InputNumber1 = readLine()!!.toInt()
         ActualNumber = InputNumber1
 
-        if(InputNumber1.toString().length>=5)
-        {
+        if (InputNumber1.toString().length >= 5) {
 
             var modulo = 0
-            while (InputNumber1!=0)
-            {
+            while (InputNumber1 != 0) {
                 modulo = InputNumber1 % 10
                 OutPutNumber = OutPutNumber + modulo
                 InputNumber1 = InputNumber1 / 10
             }
             println("Reverse of the input number : ${OutPutNumber}")
             return
-        }
-        else
-        {
+        } else {
             println("Entered number length is less than 5. Please enter valid number again")
             return
+        }
+    }
+
+    fun acceptIntegers()
+    {
+        var choice = 1
+
+        do {
+            print("Enter Integer : ")
+            numbers.add(readLine()!!.toInt())
+            print("Want to add more numbers [1.Yes 0.No] : ")
+            choice = readLine()!!.toInt()
+        }while(choice!=0)
+
+        println("Numbers are : ")
+        (0..numbers.count()-1).forEach { i -> print("${numbers.get(i)} ")}
+
+        println()
+        printNumbers(true, true)
+        println()
+
+    }
+
+    fun printNumbers(isPositive: Boolean, isNegative: Boolean)
+    {
+        if(isPositive)
+        {
+            println("All positive numbers: ")
+            for(i in numbers)
+            {
+                if(i>0)
+                    print("${i} ")
+            }
+        }
+
+        if(isNegative)
+        {
+            println("All negative numbers: ")
+            for(i in numbers)
+            {
+                if(i<0)
+                    print("${i} ")
+            }
+        }
+    }
+
+    fun calculateIntelligence()
+    {
+        var x = 5.5
+        var y = 0.0
+        for (i in 1..6)
+        {
+            y = 2 + (i + 0.5 * x)
+            x = x + 0.5
+
+            println("${i}. ${x} ${y}")
         }
     }
 
