@@ -97,6 +97,7 @@ class CoordinateGeometry {
 
         area = 0.5 * Math.abs((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)))
 
+        println(area)
         return area
     }
 
